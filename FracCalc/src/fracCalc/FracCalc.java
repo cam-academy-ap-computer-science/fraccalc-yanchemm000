@@ -12,8 +12,9 @@
 //at the end change any faction with a denominator of 1 into an integer]
 
 
-
-package fracCalc;
+//
+//cpackage fracCalc;
+//change
 import java.util.*;
 public class FracCalc {
 
