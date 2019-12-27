@@ -1,5 +1,7 @@
-//I need a calculator that will except proper, improper, and integers, negitive numbers included
-//I have a calc that will take apart the equation from start to the first space
+package fracCalc;
+
+//I need a calculator that will except proper, improper, and integers, negative numbers included
+//I have a calculator that will take apart the equation from start to the first space
 //Then 3 places after that to get the operator(it'll work if its typed exactly as I want it)
 //And then from the end of the operator's part to the end for the last faction
 
@@ -21,9 +23,14 @@ public class FracCalc {
     public static void main(String[] args) 
     {
     	Scanner userinput = new Scanner(System.in);
-    	System.out.println("CALCULATE");
-    	String equation = userinput.nextLine();
-    	produceAnswer(equation);
+    	String quit = 
+    	if(userinput != quit) {
+    		System.out.println("CALCULATE");
+        	String equation = userinput.nextLine();
+        	produceAnswer(equation);
+        	
+    	}
+    
     	
         // TODO: Read the input from the user and call produceAnswer with an equation
 
@@ -33,15 +40,14 @@ public class FracCalc {
     	improperFractions(FirstPart);
     	String Operator = equation.substring(equation.indexOf(" ")+1, equation.indexOf(" ")+3);
     	String Lastpart = equation.substring(equation.indexOf(" ")+3);
-    	System.out.println(FirstPart);
-    	return "";
+    	return Lastpart;
     }
     public static String improperFractions(String fraction) {
     	if(fraction.indexOf("/") == -1) {
     		fraction = (fraction + "/1");
     	}
     	
-    	System.out.println(fraction);
+  //  	System.out.println();
     	return ("");
     }
     // ** IMPORTANT ** DO NOT DELETE THIS FUNCTION.  This function will be used to test your code
