@@ -20,16 +20,18 @@ package fracCalc;
 import java.util.*;
 public class FracCalc {
 
-    public static void main(String[] args) 
+    private static Scanner userinput;
+
+	public static void main(String[] args) 
     {
-    	Scanner userinput = new Scanner(System.in);
-    	String quit = 
-    	if(userinput != quit) {
+    	userinput = new Scanner(System.in);
+    	String ContinueOrNah = "default";
+    	while(!ContinueOrNah.toLowerCase().equals("quit")) {
     		System.out.println("CALCULATE");
         	String equation = userinput.nextLine();
         	produceAnswer(equation);
-        	
     	}
+    	
     
     	
         // TODO: Read the input from the user and call produceAnswer with an equation
