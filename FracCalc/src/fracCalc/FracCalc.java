@@ -39,12 +39,16 @@ public class FracCalc {
     }
     public static String produceAnswer(String equation) {
     	String FirstPart = equation.substring(0, equation.indexOf(' '));
-    	improperFractions(FirstPart);
+    	NumDenWhole(FirstPart);
     	String Operator = equation.substring(equation.indexOf(" ")+1, equation.indexOf(" ")+3);
     	String Lastpart = equation.substring(equation.indexOf(" ")+3);
-    	return Lastpart;
+    	return Operator;
     }
-    public static String improperFractions(String fraction) {
+    public static String NumDenWhole(String fraction) {
+		// TODO Auto-generated method stub
+		return ("");
+	}
+	public static String improperFractions(String fraction) {
     	if(fraction.indexOf("/") == -1) {
     		fraction = (fraction + "/1");
     	}
