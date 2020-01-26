@@ -1,0 +1,27 @@
+Total Grade:  45/115
+
+Input Parsing: 5/15
+Addition & Subtraction: 5/20
+Multiplication & Division: 5/20
+Fraction Reduction: 15/15
+Output is a Mixed Fraction: 0/15
+Handles Mixed Fractions: 10/10
+Handles Negatives: 0/15
+Code Comments: 5/5
+
+You properly divided up the two operands into whole, numerator, and denominator, but
+you were not finding the operand properly, so no math was ever being done.  You also
+did not handle the "quit" input properly.
+
+Because you were not finding the operand, no math was ever even being attempted.  Every
+question returned "zero", which incidentally did match some of the test answers, but not
+because accurate math was being done.
+
+I fixed your operand issue, and found that you had an open bracket that was causing large
+sections of your code to be skipped.  I fixed that issue, and then I was able to get some
+calculations to be attempted, and some were correct, but many were still very wrong.
+
+The ones that were correct were reduced properly... it appears you put a fair amount of work
+into that.  But, they were not presented properly as simplified mixed numbers.
+
+
